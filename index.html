@@ -21,6 +21,23 @@
             bottom: 0;
             height: inherit;
         }
+        @media (max-width: 600px) { /* Adjust the width value as needed */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .image-container .image-text-container {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        .image-text-container {
+            border: none;
+            padding: 0;
+        }
+    }   
     </style>
 </head>
 <body>
@@ -52,9 +69,8 @@
 
     <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
     <div class="w3-main" style="margin-left:250px">
-
         <div class="w3-row w3-padding-64">
-            <div class="w3-twothird w3-container">
+            <div class="w3-twothird">
                 <h1 class="w3-text-teal">Unraveling the Remarkable Progress of ChatGPT and AI Advancements in Recent Years</h1>
                 <p>
                     In the past few years, the field of artificial intelligence (AI) has witnessed unprecedented growth and breakthroughs, revolutionizing various aspects of our lives.
@@ -62,26 +78,30 @@
                     and generation, enabling more sophisticated and human-like interactions between machines and humans.
                 </p>
             </div>
-            <div class="w3-third w3-container">
-                <p class="w3-border w3-padding-large w3-padding-32 w3-center"><img src="news.jpg"></p>
+            <div class="image-container">
+                <div class="image-text-container">
+                    <img src="news.jpg">
+                </div>
             </div>
         </div>
-
+    
         <div class="w3-row">
-            <div class="w3-twothird w3-container">
+            <div class="w3-twothird">
                 <h1 class="w3-text-teal">Musk Seems to Suggest AI Contributed to Rate Limit Policy</h1>
                 <p>
                     Several tweets and interactions suggest the billionaire doesn't want AI companies scraping data from Twitter and sees chat bots potentially causing harm on the platform.
                     <a href="news/musk-rate-limit.html" class="w3-text-teal">continue</a>
                 </p>
             </div>
-            <div class="w3-third w3-container">
-                <p class="w3-border w3-padding-large w3-padding-32 w3-center"><img src="news2.jpg"></p>
+            <div class="image-container">
+                <div class="image-text-container">
+                    <img src="news2.jpg">
+                </div>
             </div>
         </div>
-
+    
         <div class="w3-row w3-padding-64">
-            <div class="w3-twothird w3-container">
+            <div class="w3-twothird">
                 <h1 class="w3-text-teal">Twitter Threatens Legal Action Against Meta</h1>
                 <p>
                     Twitter has taken a firm stance against Meta by issuing a cease-and-desist letter. The letter, 
@@ -92,10 +112,13 @@
                     or is it an attempt to intimidate and bully a competitor?
                 </p>
             </div>
-            <div class="w3-third w3-container">
-                <p class="w3-border w3-padding-large w3-padding-32 w3-center"><img src="metalogo.png"></p>
+            <div class="image-container">
+                <div class="image-text-container">
+                    <img src="metalogo.png">
+                </div>
             </div>
         </div>
+    </div>
 
         <div class="w3-center w3-padding-32">
             <div class="w3-bar">
