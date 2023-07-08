@@ -33,25 +33,27 @@
             margin-bottom: 20px;
         }
         
+        <head>
+    <style>
         .logo-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 40px;
-    }
+            display: flex;
+            justify-content: flex-end; /* Aligns items to the right side */
+            align-items: center;
+            margin-bottom: 40px;
+        }
 
-    .logo-container img {
-        margin-right: 5px;
-    } 
-       
+        .logo-container img {
+            margin-left: 5px; /* Use margin-left instead of margin-right to create space on the right side */
+        } 
     </style>
 </head>
 <body>
     <header>
-        <div class=".logo">
+        <div class="logo-container"> <!-- Remove the dot (.) from the class name -->
             <img src="logo.jpg" alt="Logo">
         </div>
     </header>
+
     <!-- Navbar -->
     <div class="w3-top">
         <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
